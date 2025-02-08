@@ -45,13 +45,19 @@
 }
 
 .calculadora {
-  max-width: 400px;
+  max-width: 700px;
   margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius:
     5px;
   background-color: #fff;
+}
+
+.container__buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .numeros {
@@ -68,16 +74,23 @@
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: white;
+  color: black;
 }
 
 .button {
   font-size: 1.2em;
   padding: 10px;
-  margin-right: 10px;
   border: 1px solid #ccc;
   border-radius:
     5px;
   cursor: pointer;
+  flex: 1 0 30%;
+  background-color: darkred;
+}
+
+.button[name="Limpiar"]{
+  background-color: gray;
 }
 
 .resultado {

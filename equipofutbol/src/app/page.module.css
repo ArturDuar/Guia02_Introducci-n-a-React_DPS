@@ -32,6 +32,7 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main {
@@ -44,9 +45,45 @@
   min-height: 100vh;
 }
 
-.container__list {
-  list-style-type: none;
-  padding: 0;
+
+.container__img{
+display: flex;
+justify-content: center;
+}
+
+.container__equipo div{
+  align-content: center;
+}
+
+.container__equipo div strong{
+  font-size: 20px;
+  color: darkblue;
+}
+.container__equipo div p{
+  font-size: 18px;
+  color: black;
+}
+
+.container__img img{
+  height: 20em;
+  width: 15em;
+  object-fit: cover;
+}
+
+.container__equipo{
+  display: flex;
+  background-color: white;
+  box-shadow: -15px 15px 20px 10px lightgrey;
+  color: black;
+  padding: 20px;
+  gap: 5em;
+  border-radius: 10px;
+  margin: 30px 0 30px 0;
+}
+
+.container__equipo:hover{
+  transform: scale(1.2);
+  transition: linear 0.1s;
 }
 
 .list {
@@ -57,13 +94,16 @@
   margin: 20px 0;
   border: 0;
   border-top: 1px solid #ccc;
+  text-align: center;
 }
 
 
 .nameclub {
   margin: 20px 0;
-  border: 0;
-  border-top: 1px solid rgb(29, 84, 185);
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 99);
+
 }
 
 .main ol {
